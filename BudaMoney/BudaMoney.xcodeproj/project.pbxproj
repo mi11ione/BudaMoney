@@ -1,0 +1,723 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A75386212BE02F7500C919C7 /* BudaMoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */; };
+		A75386232BE02F7500C919C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75386222BE02F7500C919C7 /* ContentView.swift */; };
+		A75386252BE02F7600C919C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75386242BE02F7600C919C7 /* Assets.xcassets */; };
+		A75386292BE02F7600C919C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75386282BE02F7600C919C7 /* Preview Assets.xcassets */; };
+		A75386332BE02F7600C919C7 /* BudaMoneyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75386322BE02F7600C919C7 /* BudaMoneyTests.swift */; };
+		A753863D2BE02F7600C919C7 /* BudaMoneyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753863C2BE02F7600C919C7 /* BudaMoneyUITests.swift */; };
+		A753863F2BE02F7600C919C7 /* BudaMoneyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A753863E2BE02F7600C919C7 /* BudaMoneyUITestsLaunchTests.swift */; };
+		A75386502BE0305800C919C7 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = A753864F2BE0305800C919C7 /* Factory */; };
+		A75386532BE0314700C919C7 /* CoreArch in Frameworks */ = {isa = PBXBuildFile; productRef = A75386522BE0314700C919C7 /* CoreArch */; };
+		A75386552BE0314700C919C7 /* CoreDI in Frameworks */ = {isa = PBXBuildFile; productRef = A75386542BE0314700C919C7 /* CoreDI */; };
+		A75386572BE0314700C919C7 /* CoreUI in Frameworks */ = {isa = PBXBuildFile; productRef = A75386562BE0314700C919C7 /* CoreUI */; };
+		A75386592BE0314700C919C7 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = A75386582BE0314700C919C7 /* Extensions */; };
+		A753865B2BE0314700C919C7 /* FeatureConverter in Frameworks */ = {isa = PBXBuildFile; productRef = A753865A2BE0314700C919C7 /* FeatureConverter */; };
+		A753865D2BE032B600C919C7 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = A753865C2BE032B600C919C7 /* Data */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A753862F2BE02F7600C919C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A75386152BE02F7500C919C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A753861C2BE02F7500C919C7;
+			remoteInfo = BudaMoney;
+		};
+		A75386392BE02F7600C919C7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A75386152BE02F7500C919C7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A753861C2BE02F7500C919C7;
+			remoteInfo = BudaMoney;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A753861D2BE02F7500C919C7 /* BudaMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudaMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyApp.swift; sourceTree = "<group>"; };
+		A75386222BE02F7500C919C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A75386242BE02F7600C919C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A75386262BE02F7600C919C7 /* BudaMoney.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BudaMoney.entitlements; sourceTree = "<group>"; };
+		A75386282BE02F7600C919C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A753862E2BE02F7600C919C7 /* BudaMoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudaMoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A75386322BE02F7600C919C7 /* BudaMoneyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyTests.swift; sourceTree = "<group>"; };
+		A75386382BE02F7600C919C7 /* BudaMoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudaMoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A753863C2BE02F7600C919C7 /* BudaMoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyUITests.swift; sourceTree = "<group>"; };
+		A753863E2BE02F7600C919C7 /* BudaMoneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A753861A2BE02F7500C919C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A753865B2BE0314700C919C7 /* FeatureConverter in Frameworks */,
+				A75386592BE0314700C919C7 /* Extensions in Frameworks */,
+				A75386552BE0314700C919C7 /* CoreDI in Frameworks */,
+				A75386572BE0314700C919C7 /* CoreUI in Frameworks */,
+				A75386502BE0305800C919C7 /* Factory in Frameworks */,
+				A75386532BE0314700C919C7 /* CoreArch in Frameworks */,
+				A753865D2BE032B600C919C7 /* Data in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753862B2BE02F7600C919C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75386352BE02F7600C919C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A75386142BE02F7500C919C7 = {
+			isa = PBXGroup;
+			children = (
+				A753861F2BE02F7500C919C7 /* BudaMoney */,
+				A75386312BE02F7600C919C7 /* BudaMoneyTests */,
+				A753863B2BE02F7600C919C7 /* BudaMoneyUITests */,
+				A753861E2BE02F7500C919C7 /* Products */,
+				A75386512BE0314700C919C7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A753861E2BE02F7500C919C7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A753861D2BE02F7500C919C7 /* BudaMoney.app */,
+				A753862E2BE02F7600C919C7 /* BudaMoneyTests.xctest */,
+				A75386382BE02F7600C919C7 /* BudaMoneyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A753861F2BE02F7500C919C7 /* BudaMoney */ = {
+			isa = PBXGroup;
+			children = (
+				A753864B2BE02F8800C919C7 /* Sources */,
+				A75386242BE02F7600C919C7 /* Assets.xcassets */,
+				A75386262BE02F7600C919C7 /* BudaMoney.entitlements */,
+				A75386272BE02F7600C919C7 /* Preview Content */,
+			);
+			path = BudaMoney;
+			sourceTree = "<group>";
+		};
+		A75386272BE02F7600C919C7 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				A75386282BE02F7600C919C7 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A75386312BE02F7600C919C7 /* BudaMoneyTests */ = {
+			isa = PBXGroup;
+			children = (
+				A75386322BE02F7600C919C7 /* BudaMoneyTests.swift */,
+			);
+			path = BudaMoneyTests;
+			sourceTree = "<group>";
+		};
+		A753863B2BE02F7600C919C7 /* BudaMoneyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A753863C2BE02F7600C919C7 /* BudaMoneyUITests.swift */,
+				A753863E2BE02F7600C919C7 /* BudaMoneyUITestsLaunchTests.swift */,
+			);
+			path = BudaMoneyUITests;
+			sourceTree = "<group>";
+		};
+		A753864B2BE02F8800C919C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A753864C2BE02F9000C919C7 /* View */,
+				A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A753864C2BE02F9000C919C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A753864D2BE02F9400C919C7 /* Content */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A753864D2BE02F9400C919C7 /* Content */ = {
+			isa = PBXGroup;
+			children = (
+				A75386222BE02F7500C919C7 /* ContentView.swift */,
+			);
+			path = Content;
+			sourceTree = "<group>";
+		};
+		A75386512BE0314700C919C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A753861C2BE02F7500C919C7 /* BudaMoney */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75386422BE02F7600C919C7 /* Build configuration list for PBXNativeTarget "BudaMoney" */;
+			buildPhases = (
+				A75386192BE02F7500C919C7 /* Sources */,
+				A753861A2BE02F7500C919C7 /* Frameworks */,
+				A753861B2BE02F7500C919C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BudaMoney;
+			packageProductDependencies = (
+				A753864F2BE0305800C919C7 /* Factory */,
+				A75386522BE0314700C919C7 /* CoreArch */,
+				A75386542BE0314700C919C7 /* CoreDI */,
+				A75386562BE0314700C919C7 /* CoreUI */,
+				A75386582BE0314700C919C7 /* Extensions */,
+				A753865A2BE0314700C919C7 /* FeatureConverter */,
+				A753865C2BE032B600C919C7 /* Data */,
+			);
+			productName = BudaMoney;
+			productReference = A753861D2BE02F7500C919C7 /* BudaMoney.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A753862D2BE02F7600C919C7 /* BudaMoneyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75386452BE02F7600C919C7 /* Build configuration list for PBXNativeTarget "BudaMoneyTests" */;
+			buildPhases = (
+				A753862A2BE02F7600C919C7 /* Sources */,
+				A753862B2BE02F7600C919C7 /* Frameworks */,
+				A753862C2BE02F7600C919C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A75386302BE02F7600C919C7 /* PBXTargetDependency */,
+			);
+			name = BudaMoneyTests;
+			productName = BudaMoneyTests;
+			productReference = A753862E2BE02F7600C919C7 /* BudaMoneyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A75386372BE02F7600C919C7 /* BudaMoneyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A75386482BE02F7600C919C7 /* Build configuration list for PBXNativeTarget "BudaMoneyUITests" */;
+			buildPhases = (
+				A75386342BE02F7600C919C7 /* Sources */,
+				A75386352BE02F7600C919C7 /* Frameworks */,
+				A75386362BE02F7600C919C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A753863A2BE02F7600C919C7 /* PBXTargetDependency */,
+			);
+			name = BudaMoneyUITests;
+			productName = BudaMoneyUITests;
+			productReference = A75386382BE02F7600C919C7 /* BudaMoneyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A75386152BE02F7500C919C7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1530;
+				LastUpgradeCheck = 1530;
+				TargetAttributes = {
+					A753861C2BE02F7500C919C7 = {
+						CreatedOnToolsVersion = 15.3;
+					};
+					A753862D2BE02F7600C919C7 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A753861C2BE02F7500C919C7;
+					};
+					A75386372BE02F7600C919C7 = {
+						CreatedOnToolsVersion = 15.3;
+						TestTargetID = A753861C2BE02F7500C919C7;
+					};
+				};
+			};
+			buildConfigurationList = A75386182BE02F7500C919C7 /* Build configuration list for PBXProject "BudaMoney" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A75386142BE02F7500C919C7;
+			packageReferences = (
+				A753864E2BE0305800C919C7 /* XCRemoteSwiftPackageReference "Factory" */,
+			);
+			productRefGroup = A753861E2BE02F7500C919C7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A753861C2BE02F7500C919C7 /* BudaMoney */,
+				A753862D2BE02F7600C919C7 /* BudaMoneyTests */,
+				A75386372BE02F7600C919C7 /* BudaMoneyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A753861B2BE02F7500C919C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75386292BE02F7600C919C7 /* Preview Assets.xcassets in Resources */,
+				A75386252BE02F7600C919C7 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753862C2BE02F7600C919C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75386362BE02F7600C919C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A75386192BE02F7500C919C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75386232BE02F7500C919C7 /* ContentView.swift in Sources */,
+				A75386212BE02F7500C919C7 /* BudaMoneyApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A753862A2BE02F7600C919C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A75386332BE02F7600C919C7 /* BudaMoneyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A75386342BE02F7600C919C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A753863D2BE02F7600C919C7 /* BudaMoneyUITests.swift in Sources */,
+				A753863F2BE02F7600C919C7 /* BudaMoneyUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A75386302BE02F7600C919C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A753861C2BE02F7500C919C7 /* BudaMoney */;
+			targetProxy = A753862F2BE02F7600C919C7 /* PBXContainerItemProxy */;
+		};
+		A753863A2BE02F7600C919C7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A753861C2BE02F7500C919C7 /* BudaMoney */;
+			targetProxy = A75386392BE02F7600C919C7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A75386402BE02F7600C919C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A75386412BE02F7600C919C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A75386432BE02F7600C919C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BudaMoney/BudaMoney.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BudaMoney/Preview Content\"";
+				DEVELOPMENT_TEAM = ZZWB6X2U7F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogbuda.money.BudaMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A75386442BE02F7600C919C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = BudaMoney/BudaMoney.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BudaMoney/Preview Content\"";
+				DEVELOPMENT_TEAM = ZZWB6X2U7F;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphoneos*]" = YES;
+				"INFOPLIST_KEY_UILaunchScreen_Generation[sdk=iphonesimulator*]" = YES;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphoneos*]" = UIStatusBarStyleDefault;
+				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
+				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogbuda.money.BudaMoney;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A75386462BE02F7600C919C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZWB6X2U7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogbuda.money.BudaMoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudaMoney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BudaMoney";
+			};
+			name = Debug;
+		};
+		A75386472BE02F7600C919C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZWB6X2U7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogbuda.money.BudaMoneyTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BudaMoney.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BudaMoney";
+			};
+			name = Release;
+		};
+		A75386492BE02F7600C919C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZWB6X2U7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogbuda.money.BudaMoneyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BudaMoney;
+			};
+			name = Debug;
+		};
+		A753864A2BE02F7600C919C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = ZZWB6X2U7F;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
+				MACOSX_DEPLOYMENT_TARGET = 14.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ogbuda.money.BudaMoneyUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = auto;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BudaMoney;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A75386182BE02F7500C919C7 /* Build configuration list for PBXProject "BudaMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75386402BE02F7600C919C7 /* Debug */,
+				A75386412BE02F7600C919C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75386422BE02F7600C919C7 /* Build configuration list for PBXNativeTarget "BudaMoney" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75386432BE02F7600C919C7 /* Debug */,
+				A75386442BE02F7600C919C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75386452BE02F7600C919C7 /* Build configuration list for PBXNativeTarget "BudaMoneyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75386462BE02F7600C919C7 /* Debug */,
+				A75386472BE02F7600C919C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A75386482BE02F7600C919C7 /* Build configuration list for PBXNativeTarget "BudaMoneyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A75386492BE02F7600C919C7 /* Debug */,
+				A753864A2BE02F7600C919C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A753864E2BE0305800C919C7 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A753864F2BE0305800C919C7 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A753864E2BE0305800C919C7 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
+		};
+		A75386522BE0314700C919C7 /* CoreArch */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreArch;
+		};
+		A75386542BE0314700C919C7 /* CoreDI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreDI;
+		};
+		A75386562BE0314700C919C7 /* CoreUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoreUI;
+		};
+		A75386582BE0314700C919C7 /* Extensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Extensions;
+		};
+		A753865A2BE0314700C919C7 /* FeatureConverter */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = FeatureConverter;
+		};
+		A753865C2BE032B600C919C7 /* Data */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Data;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = A75386152BE02F7500C919C7 /* Project object */;
+}
