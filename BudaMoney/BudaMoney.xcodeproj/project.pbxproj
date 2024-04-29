@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3376AE962BE0474C00B8BF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		A753861D2BE02F7500C919C7 /* BudaMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudaMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyApp.swift; sourceTree = "<group>"; };
 		A75386222BE02F7500C919C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +111,7 @@
 		A753861F2BE02F7500C919C7 /* BudaMoney */ = {
 			isa = PBXGroup;
 			children = (
+				3376AE962BE0474C00B8BF46 /* Info.plist */,
 				A753864B2BE02F8800C919C7 /* Sources */,
 				A75386242BE02F7600C919C7 /* Assets.xcassets */,
 				A75386262BE02F7600C919C7 /* BudaMoney.entitlements */,
@@ -482,6 +484,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudaMoney/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
@@ -521,6 +524,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = BudaMoney/Info.plist;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
