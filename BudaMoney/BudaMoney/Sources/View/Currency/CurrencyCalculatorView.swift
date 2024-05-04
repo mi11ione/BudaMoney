@@ -30,8 +30,8 @@ struct CurrencyCalculatorView: View {
                         Currencies(selectedCurrency: $selectedStartCurrency)
                     }
 
-                    Section(header: Text("Select Year")) {
-                        TextField("Enter Year", text: $yearSelection)
+                    Section(header: Text("Year")) {
+                        TextField("Enter year", text: $yearSelection)
                             .keyboardType(.decimalPad)
                             .focused($keyboardFocused)
                     }
