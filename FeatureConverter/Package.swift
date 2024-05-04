@@ -6,13 +6,13 @@ let package = Package(
     name: "FeatureConverter",
     platforms: [
         .iOS(.v17),
-        .macOS(.v14)
+        .macOS(.v14),
     ],
     products: [
         .library(
             name: "FeatureConverter",
             targets: ["FeatureConverter"]
-        )
+        ),
     ],
     dependencies: [
         .package(path: "../CoreArch"),
@@ -37,6 +37,6 @@ let package = Package(
         .testTarget(
             name: "FeatureConverterTests",
             dependencies: ["FeatureConverter"]
-        )
+        ),
     ]
 )

@@ -8,11 +8,11 @@ let package = Package(
         .library(
             name: "Data",
             targets: ["Data"]
-        )
+        ),
     ],
     targets: [
         .target(
             name: "Data"
-        )
+        ),
     ]
 )
