@@ -64,7 +64,8 @@ import Data
             }
             .buttonStyle(.borderedProminent)
             .controlSize(.extraLarge)
-            .tint(colorScheme == .dark ? .white : .black)
+            .foregroundStyle(colorScheme.colorOnSelectedBackground)
+            .tint(colorScheme.colorSelectedBackground)
             .font(.headline.weight(.bold))
             .cornerRadius(10)
             .padding()
