@@ -19,7 +19,7 @@ struct CurrencyCalculatorView: View {
     var body: some View {
         ZStack {
             NavigationView {
-                Form {
+                List {
                     Section(header: Text("Amount")) {
                         TextField("Enter amount", text: $amount)
                             .keyboardType(.decimalPad)

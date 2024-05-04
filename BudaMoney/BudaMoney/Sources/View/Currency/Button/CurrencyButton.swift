@@ -26,12 +26,12 @@ struct CurrencyButton: View {
             Text(currency)
                 .font(.headline)
                 .foregroundColor(isSelected ? (colorScheme == .dark ? .black : .white) : (colorScheme == .dark ? .white : .black))
-                .padding(.horizontal, 11)
+                .padding(.horizontal, 9)
                 .padding(.vertical, 7)
                 .background(backgroundView)
                 .cornerRadius(10)
         }
-        .padding(.trailing, 4)
+        .padding(.trailing, 5)
         .padding(.bottom, 1)
     }
 
