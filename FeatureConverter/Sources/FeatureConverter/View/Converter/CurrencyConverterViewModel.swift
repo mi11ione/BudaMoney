@@ -7,7 +7,9 @@
 
 import Foundation
 import SwiftUI
+import Factory
 import CoreArch
+import CoreDI
 import Data
 
 @Observable
@@ -18,8 +20,10 @@ final class CurrencyConverterViewModel: BaseViewModel {
     var convertedAmount = ""
     var year = ""
     
+    @ObservationIgnored @Injected(\.hapticFeedbackGenerator) private var hapticFeedbackGenerator
+    
     func convertCurrency() {
         convertedAmount = "\(startAmount) \(selectedEndCurrency.name)"
-        UINotificationFeedbackGenerator().notificationOccurred(.success)
+        hapticFeedbackGenerator.notificationOccurred(.success)
     }
 }
