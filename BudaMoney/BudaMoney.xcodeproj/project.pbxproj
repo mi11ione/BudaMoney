@@ -21,6 +21,11 @@
 		A75386592BE0314700C919C7 /* Extensions in Frameworks */ = {isa = PBXBuildFile; productRef = A75386582BE0314700C919C7 /* Extensions */; };
 		A753865B2BE0314700C919C7 /* FeatureConverter in Frameworks */ = {isa = PBXBuildFile; productRef = A753865A2BE0314700C919C7 /* FeatureConverter */; };
 		A753865D2BE032B600C919C7 /* Data in Frameworks */ = {isa = PBXBuildFile; productRef = A753865C2BE032B600C919C7 /* Data */; };
+		A7BF5C392C034BC2008333D5 /* ClickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5C382C034BC2008333D5 /* ClickerView.swift */; };
+		A7BF5C3C2C034FA1008333D5 /* MoneyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5C3B2C034FA1008333D5 /* MoneyStore.swift */; };
+		A7BF5C3F2C0353B7008333D5 /* ClickerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5C3E2C0353B7008333D5 /* ClickerInfoView.swift */; };
+		A7BF5C422C0362A5008333D5 /* AlertKit in Frameworks */ = {isa = PBXBuildFile; productRef = A7BF5C412C0362A5008333D5 /* AlertKit */; };
+		A7BF5C452C03650F008333D5 /* ClickerUpgradesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7BF5C442C03650F008333D5 /* ClickerUpgradesView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,10 @@
 		A75386382BE02F7600C919C7 /* BudaMoneyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BudaMoneyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A753863C2BE02F7600C919C7 /* BudaMoneyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyUITests.swift; sourceTree = "<group>"; };
 		A753863E2BE02F7600C919C7 /* BudaMoneyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A7BF5C382C034BC2008333D5 /* ClickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerView.swift; sourceTree = "<group>"; };
+		A7BF5C3B2C034FA1008333D5 /* MoneyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyStore.swift; sourceTree = "<group>"; };
+		A7BF5C3E2C0353B7008333D5 /* ClickerInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerInfoView.swift; sourceTree = "<group>"; };
+		A7BF5C442C03650F008333D5 /* ClickerUpgradesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickerUpgradesView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BF5C422C0362A5008333D5 /* AlertKit in Frameworks */,
 				A753865B2BE0314700C919C7 /* FeatureConverter in Frameworks */,
 				A75386592BE0314700C919C7 /* Extensions in Frameworks */,
 				A75386552BE0314700C919C7 /* CoreDI in Frameworks */,
@@ -148,6 +158,7 @@
 		A753864B2BE02F8800C919C7 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				A7BF5C3A2C034F83008333D5 /* Store */,
 				A753864C2BE02F9000C919C7 /* View */,
 				A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */,
 			);
@@ -157,6 +168,9 @@
 		A753864C2BE02F9000C919C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A7BF5C432C036503008333D5 /* ClickerUpgrades */,
+				A7BF5C3D2C0353AA008333D5 /* ClickerInfo */,
+				A7BF5C372C034BB2008333D5 /* Clicker */,
 				A753864D2BE02F9400C919C7 /* Content */,
 			);
 			path = View;
@@ -175,6 +189,38 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A7BF5C372C034BB2008333D5 /* Clicker */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF5C382C034BC2008333D5 /* ClickerView.swift */,
+			);
+			path = Clicker;
+			sourceTree = "<group>";
+		};
+		A7BF5C3A2C034F83008333D5 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF5C3B2C034FA1008333D5 /* MoneyStore.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		A7BF5C3D2C0353AA008333D5 /* ClickerInfo */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF5C3E2C0353B7008333D5 /* ClickerInfoView.swift */,
+			);
+			path = ClickerInfo;
+			sourceTree = "<group>";
+		};
+		A7BF5C432C036503008333D5 /* ClickerUpgrades */ = {
+			isa = PBXGroup;
+			children = (
+				A7BF5C442C03650F008333D5 /* ClickerUpgradesView.swift */,
+			);
+			path = ClickerUpgrades;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,6 +247,7 @@
 				A75386582BE0314700C919C7 /* Extensions */,
 				A753865A2BE0314700C919C7 /* FeatureConverter */,
 				A753865C2BE032B600C919C7 /* Data */,
+				A7BF5C412C0362A5008333D5 /* AlertKit */,
 			);
 			productName = BudaMoney;
 			productReference = A753861D2BE02F7500C919C7 /* BudaMoney.app */;
@@ -276,6 +323,7 @@
 			mainGroup = A75386142BE02F7500C919C7;
 			packageReferences = (
 				A753864E2BE0305800C919C7 /* XCRemoteSwiftPackageReference "Factory" */,
+				A7BF5C402C0362A5008333D5 /* XCRemoteSwiftPackageReference "AlertKit" */,
 			);
 			productRefGroup = A753861E2BE02F7500C919C7 /* Products */;
 			projectDirPath = "";
@@ -319,8 +367,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7BF5C3F2C0353B7008333D5 /* ClickerInfoView.swift in Sources */,
+				A7BF5C452C03650F008333D5 /* ClickerUpgradesView.swift in Sources */,
+				A7BF5C3C2C034FA1008333D5 /* MoneyStore.swift in Sources */,
 				A75386232BE02F7500C919C7 /* ContentView.swift in Sources */,
 				A75386212BE02F7500C919C7 /* BudaMoneyApp.swift in Sources */,
+				A7BF5C392C034BC2008333D5 /* ClickerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,6 +743,14 @@
 				minimumVersion = 2.3.2;
 			};
 		};
+		A7BF5C402C0362A5008333D5 /* XCRemoteSwiftPackageReference "AlertKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparrowcode/AlertKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -722,6 +782,11 @@
 		A753865C2BE032B600C919C7 /* Data */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Data;
+		};
+		A7BF5C412C0362A5008333D5 /* AlertKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A7BF5C402C0362A5008333D5 /* XCRemoteSwiftPackageReference "AlertKit" */;
+			productName = AlertKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

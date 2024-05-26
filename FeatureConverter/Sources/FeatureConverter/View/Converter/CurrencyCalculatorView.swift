@@ -20,49 +20,47 @@ import Data
     public init() { }
 
     public var body: some View {
-        NavigationView {
-            List {
-                Section(header: Text("Amount")) {
-                    TextField("Enter amount", text: $viewModel.startAmount)
-                        .keyboardType(.decimalPad)
-                        .focused($keyboardFocused)
-                }
-
-                Section(header: Text("Select Start Currency")) {
-                    CurrenciesCarouselView(
-                        currencies: currencies,
-                        selectedCurrency: $viewModel.startCurrency
-                    )
-                }
-
-                Section(header: Text("Select Start Century")) {
-                    CurrenciesCarouselView(
-                        currencies: centuries,
-                        selectedCurrency: $viewModel.startCentury
-                    )
-                }
-
-                Section(header: Text("Select End Currency")) {
-                    CurrenciesCarouselView(
-                        currencies: currencies,
-                        selectedCurrency: $viewModel.endCurrency
-                    )
-                }
-                
-                Section(header: Text("Select End Century")) {
-                    CurrenciesCarouselView(
-                        currencies: centuries,
-                        selectedCurrency: $viewModel.endCentury
-                    )
-                }
-
-                Section(header: Text("Result")) {
-                    Text(viewModel.endAmount)
-                }
+        List {
+            Section(header: Text("Amount")) {
+                TextField("Enter amount", text: $viewModel.startAmount)
+                    .keyboardType(.decimalPad)
+                    .focused($keyboardFocused)
             }
-            .navigationBarTitle("Currency Calculator")
-            .scrollDismissesKeyboard(.immediately)
+
+            Section(header: Text("Select Start Currency")) {
+                CurrenciesCarouselView(
+                    currencies: currencies,
+                    selectedCurrency: $viewModel.startCurrency
+                )
+            }
+
+            Section(header: Text("Select Start Century")) {
+                CurrenciesCarouselView(
+                    currencies: centuries,
+                    selectedCurrency: $viewModel.startCentury
+                )
+            }
+
+            Section(header: Text("Select End Currency")) {
+                CurrenciesCarouselView(
+                    currencies: currencies,
+                    selectedCurrency: $viewModel.endCurrency
+                )
+            }
+            
+            Section(header: Text("Select End Century")) {
+                CurrenciesCarouselView(
+                    currencies: centuries,
+                    selectedCurrency: $viewModel.endCentury
+                )
+            }
+
+            Section(header: Text("Result")) {
+                Text(viewModel.endAmount)
+            }
         }
+        .navigationBarTitle("Currency Calculator")
+        .scrollDismissesKeyboard(.immediately)
         .overlay(alignment: .bottom) {
             Button {
                 keyboardFocused = false

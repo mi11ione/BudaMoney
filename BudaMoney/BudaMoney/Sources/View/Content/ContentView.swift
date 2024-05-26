@@ -10,7 +10,18 @@ import FeatureConverter
 
 struct ContentView: View {
     var body: some View {
-        CurrencyConverterView()
+        NavigationStack {
+            ClickerView()
+                .toolbar {
+                    ToolbarItem(placement: .confirmationAction) {
+                        NavigationLink {
+                            CurrencyConverterView()
+                        } label: {
+                            Image(systemName: "textformat.123")
+                        }
+                    }
+                }
+        }
     }
 }
 

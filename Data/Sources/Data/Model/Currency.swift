@@ -19,3 +19,70 @@ public let historicalRates: [CurrencyRate] = [
     CurrencyRate(century: "20", rates: ["EUR": 0.85, "RUB": 0.02], usdValueIndex: 0.5),
     CurrencyRate(century: "21", rates: ["EUR": 0.9, "RUB": 0.03], usdValueIndex: 1)
 ]
+
+public protocol Century {
+    var id: String { get }
+    var upgrades: [any UserUpgrade] { get }
+}
+
+public protocol UserUpgrade: Identifiable {
+    var name: String { get }
+    var description: String { get }
+    var id: String { get }
+    var price: Double { get }
+    
+    func affectMoney(_ money: Double, _ day: Int) -> Double
+}
+
+public protocol TimeTravelUpgrade: UserUpgrade { 
+    var newCentury: Century { get }
+}
+
+public protocol HistoryEvent: UserUpgrade {
+    var story: String { get }
+    var century: String { get }
+    var upgrades: [any UserUpgrade] { get }
+    var dates: Range<Int> { get }
+}
+
+public let centuries: [any Century] = [
+    Century18(),
+    Century19(),
+    Century20(),
+    Century21()
+]
+
+public let events: [any HistoryEvent] = [
+    IndustrialRevolution(),
+    IndependenceAmericanWar(),
+    
+    GoldRush(),
+    AmericanCivilWar(),
+    
+    GreatDepression(),
+    WorldWar2(),
+    
+    GreatRecession(),
+    Covid()
+]
+
+public let upgrades: [any UserUpgrade] = [
+    IndustrialRevolution.Loom(),
+    Farm(),
+    Shop(),
+    ToCentury19(),
+    
+    Railway(),
+    CoalMine(),
+    Factory(),
+    ToCentury20(),
+    
+    OilDerrick(),
+    CarFactory(),
+    ZombieLaboratory(),
+    ToCentury21(),
+    
+    ITCompany(),
+    ITMOUniversity(),
+    ChatGPT()
+]
