@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3391CD7B2BE620E000391C01 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 3391CD7A2BE620E000391C01 /* Localizable.xcstrings */; };
 		A75386212BE02F7500C919C7 /* BudaMoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */; };
 		A75386232BE02F7500C919C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75386222BE02F7500C919C7 /* ContentView.swift */; };
 		A75386252BE02F7600C919C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75386242BE02F7600C919C7 /* Assets.xcassets */; };
@@ -43,7 +42,6 @@
 
 /* Begin PBXFileReference section */
 		3376AE962BE0474C00B8BF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		3391CD7A2BE620E000391C01 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		A753861D2BE02F7500C919C7 /* BudaMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudaMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyApp.swift; sourceTree = "<group>"; };
 		A75386222BE02F7500C919C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -118,7 +116,6 @@
 				A75386242BE02F7600C919C7 /* Assets.xcassets */,
 				A75386262BE02F7600C919C7 /* BudaMoney.entitlements */,
 				A75386272BE02F7600C919C7 /* Preview Content */,
-				3391CD7A2BE620E000391C01 /* Localizable.xcstrings */,
 			);
 			path = BudaMoney;
 			sourceTree = "<group>";
@@ -275,7 +272,6 @@
 			knownRegions = (
 				en,
 				Base,
-				ru,
 			);
 			mainGroup = A75386142BE02F7500C919C7;
 			packageReferences = (
@@ -299,7 +295,6 @@
 			files = (
 				A75386292BE02F7600C919C7 /* Preview Assets.xcassets in Resources */,
 				A75386252BE02F7600C919C7 /* Assets.xcassets in Resources */,
-				3391CD7B2BE620E000391C01 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

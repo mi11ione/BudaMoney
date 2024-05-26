@@ -7,19 +7,15 @@
 
 import Foundation
 
-public let DEFAULT_CURRENCIES = [
-    Currency(name: "USD"),
-    Currency(name: "EUR"),
-    Currency(name: "RUB"),
-    // TODO: add others
-]
-
-public struct Currency: Identifiable, Hashable {
-    public let name: String
-    
-    public var id: String { name }
-    
-    public init(name: String) {
-        self.name = name
-    }
+public struct CurrencyRate {
+    public let century: String
+    public let rates: [String: Double]
+    public let usdValueIndex: Double  // Индекс стоимости USD в этом веке
 }
+
+public let historicalRates: [CurrencyRate] = [
+    CurrencyRate(century: "18", rates: ["EUR": 0.8, "RUB": 0.01], usdValueIndex: 0.04),
+    CurrencyRate(century: "19", rates: ["EUR": 1.1, "RUB": 0.05], usdValueIndex: 0.09),
+    CurrencyRate(century: "20", rates: ["EUR": 0.85, "RUB": 0.02], usdValueIndex: 0.5),
+    CurrencyRate(century: "21", rates: ["EUR": 0.9, "RUB": 0.03], usdValueIndex: 1)
+]

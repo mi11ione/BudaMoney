@@ -30,26 +30,34 @@ import Data
 
                 Section(header: Text("Select Start Currency")) {
                     CurrenciesCarouselView(
-                        currencies: DEFAULT_CURRENCIES,
-                        selectedCurrency: $viewModel.selectedStartCurrency
+                        currencies: currencies,
+                        selectedCurrency: $viewModel.startCurrency
                     )
                 }
 
-                Section(header: Text("Year")) {
-                    TextField("Enter year", text: $viewModel.year)
-                        .keyboardType(.decimalPad)
-                        .focused($keyboardFocused)
+                Section(header: Text("Select Start Century")) {
+                    CurrenciesCarouselView(
+                        currencies: centuries,
+                        selectedCurrency: $viewModel.startCentury
+                    )
                 }
 
                 Section(header: Text("Select End Currency")) {
                     CurrenciesCarouselView(
-                        currencies: DEFAULT_CURRENCIES,
-                        selectedCurrency: $viewModel.selectedEndCurrency
+                        currencies: currencies,
+                        selectedCurrency: $viewModel.endCurrency
+                    )
+                }
+                
+                Section(header: Text("Select End Century")) {
+                    CurrenciesCarouselView(
+                        currencies: centuries,
+                        selectedCurrency: $viewModel.endCentury
                     )
                 }
 
                 Section(header: Text("Result")) {
-                    Text(viewModel.convertedAmount)
+                    Text(viewModel.endAmount)
                 }
             }
             .navigationBarTitle("Currency Calculator")
@@ -72,3 +80,6 @@ import Data
         }
     }
 }
+
+fileprivate let currencies = ["USD", "EUR", "RUB"]
+fileprivate let centuries = ["18", "19", "20", "21"]

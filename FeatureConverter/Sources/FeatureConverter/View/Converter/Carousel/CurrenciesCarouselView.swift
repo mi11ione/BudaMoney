@@ -10,8 +10,8 @@ import Extensions
 import Data
 
 struct CurrenciesCarouselView: View {
-    let currencies: [Currency]
-    @Binding var selectedCurrency: Currency
+    let currencies: [String]
+    @Binding var selectedCurrency: String
 
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
@@ -27,8 +27,8 @@ struct CurrenciesCarouselView: View {
 }
 
 fileprivate struct CurrencyButton: View {
-    var currency: Currency
-    @Binding var selectedCurrency: Currency
+    var currency: String
+    @Binding var selectedCurrency: String
     
     @Environment(\.colorScheme) private var colorScheme
     
@@ -42,7 +42,7 @@ fileprivate struct CurrencyButton: View {
                 selectedCurrency = currency
             }
         } label: {
-            Text(currency.name)
+            Text(currency)
                 .font(.headline)
                 .foregroundColor(isSelected ? colorScheme.colorOnSelectedBackground : colorScheme.colorOnSurface)
                 .padding(.horizontal, 9)
