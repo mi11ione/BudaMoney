@@ -15,7 +15,7 @@ final class MoneyStore: ObservableObject {
     @AppStorage("money") var amount: Double = 0
     @AppStorage("current_day") var currentDay: Int = 1
     
-    @AppStorage("century_id") var centuryId = "20"
+    @AppStorage("century_id") var centuryId = "18"
     @AppStorage("applied_upgrades") var appliedUpgradesIds: [String] = []
     
     @Published var century: (any Century)? = nil
