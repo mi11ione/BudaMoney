@@ -9,7 +9,7 @@ import Foundation
 
 struct Century19: Century {
     var id: String = "19"
-    var upgrades: [any UserUpgrade] = [Railway(), CoalMine(), Factory()]
+    var upgrades: [any UserUpgrade] = [Railway(), CoalMine(), Factory(), ToCentury20()]
 }
 
 struct GoldRush: HistoryEvent {
