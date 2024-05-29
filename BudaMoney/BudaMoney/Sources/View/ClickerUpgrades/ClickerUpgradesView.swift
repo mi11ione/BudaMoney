@@ -9,11 +9,10 @@ import Foundation
 import SwiftUI
 
 struct ClickerUpgradesView: View {
-    
     @EnvironmentObject private var moneyStore: MoneyStore
-    
+
     @Environment(\.dismiss) private var dismiss
-    
+
     var body: some View {
         NavigationStack {
             List {
@@ -28,19 +27,19 @@ struct ClickerUpgradesView: View {
                         }
                     }
                 }
-                
+
                 Section("Upgrades") {
                     let upgrades = moneyStore.availableUpgrades.filter { upgrade in
                         !moneyStore.appliedUpgrades.contains(where: { upgrade.id == $0.id })
                     }
-                    
+
                     if !upgrades.isEmpty {
                         ForEach(upgrades, id: \.id) { upgrade in
                             VStack(alignment: .leading) {
                                 Text(upgrade.name)
                                     .bold()
                                 Text(upgrade.description)
-                                
+
                                 Button {
                                     moneyStore.buy(upgrade)
                                 } label: {

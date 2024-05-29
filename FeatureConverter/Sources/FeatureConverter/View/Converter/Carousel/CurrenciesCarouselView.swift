@@ -5,9 +5,9 @@
 //  Created by mi11ion on 4/5/24.
 //
 
-import SwiftUI
-import Extensions
 import Data
+import Extensions
+import SwiftUI
 
 struct CurrenciesCarouselView: View {
     let currencies: [String]
@@ -26,12 +26,12 @@ struct CurrenciesCarouselView: View {
     }
 }
 
-fileprivate struct CurrencyButton: View {
+private struct CurrencyButton: View {
     var currency: String
     @Binding var selectedCurrency: String
-    
+
     @Environment(\.colorScheme) private var colorScheme
-    
+
     private var isSelected: Bool {
         currency == selectedCurrency
     }

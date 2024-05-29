@@ -10,14 +10,14 @@ import Foundation
 public struct CurrencyRate {
     public let century: String
     public let rates: [String: Double]
-    public let usdValueIndex: Double  // Индекс стоимости USD в этом веке
+    public let usdValueIndex: Double // Индекс стоимости USD в этом веке
 }
 
 public let historicalRates: [CurrencyRate] = [
-    CurrencyRate(century: "18", rates: ["EUR": 0.8, "RUB": 0.01], usdValueIndex: 0.04),
-    CurrencyRate(century: "19", rates: ["EUR": 1.1, "RUB": 0.05], usdValueIndex: 0.09),
-    CurrencyRate(century: "20", rates: ["EUR": 0.85, "RUB": 0.02], usdValueIndex: 0.5),
-    CurrencyRate(century: "21", rates: ["EUR": 0.9, "RUB": 0.03], usdValueIndex: 1)
+    CurrencyRate(century: "18", rates: ["EUR": 0.82, "RUB": 0.015], usdValueIndex: 0.04),
+    CurrencyRate(century: "19", rates: ["EUR": 1.05, "RUB": 0.02], usdValueIndex: 0.09),
+    CurrencyRate(century: "20", rates: ["EUR": 0.85, "RUB": 0.015], usdValueIndex: 0.5),
+    CurrencyRate(century: "21", rates: ["EUR": 0.9, "RUB": 0.014], usdValueIndex: 1),
 ]
 
 public protocol Century {
@@ -30,11 +30,11 @@ public protocol UserUpgrade: Identifiable {
     var description: String { get }
     var id: String { get }
     var price: Double { get }
-    
+
     func affectMoney(_ money: Double, _ day: Int) -> Double
 }
 
-public protocol TimeTravelUpgrade: UserUpgrade { 
+public protocol TimeTravelUpgrade: UserUpgrade {
     var newCentury: Century { get }
 }
 
@@ -49,21 +49,21 @@ public let centuries: [any Century] = [
     Century18(),
     Century19(),
     Century20(),
-    Century21()
+    Century21(),
 ]
 
 public let events: [any HistoryEvent] = [
     IndustrialRevolution(),
     IndependenceAmericanWar(),
-    
+
     GoldRush(),
     AmericanCivilWar(),
-    
+
     GreatDepression(),
     WorldWar2(),
-    
+
     GreatRecession(),
-    Covid()
+    Covid(),
 ]
 
 public let upgrades: [any UserUpgrade] = [
@@ -71,18 +71,18 @@ public let upgrades: [any UserUpgrade] = [
     Farm(),
     Shop(),
     ToCentury19(),
-    
+
     Railway(),
     CoalMine(),
     Factory(),
     ToCentury20(),
-    
+
     OilDerrick(),
     CarFactory(),
     ZombieLaboratory(),
     ToCentury21(),
-    
+
     ITCompany(),
     ITMOUniversity(),
-    ChatGPT()
+    ChatGPT(),
 ]

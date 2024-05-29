@@ -9,11 +9,10 @@ import Foundation
 import SwiftUI
 
 struct ClickerInfoView: View {
-    
     @EnvironmentObject private var moneyStore: MoneyStore
-    
+
     @Environment(\.dismiss) private var dismiss
-    
+
     var body: some View {
         NavigationStack {
             List {
@@ -30,7 +29,7 @@ struct ClickerInfoView: View {
                         Text("Nothing interesting is happening right now")
                     }
                 }
-                
+
                 Section("Story") {
                     if !moneyStore.ongoingEvents.isEmpty {
                         ForEach(moneyStore.ongoingEvents, id: \.id) { event in

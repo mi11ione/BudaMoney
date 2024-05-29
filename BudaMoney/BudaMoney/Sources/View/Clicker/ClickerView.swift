@@ -9,32 +9,31 @@ import Foundation
 import SwiftUI
 
 struct ClickerView: View {
-    
     @StateObject private var moneyStore = MoneyStore()
-    
+
     @State private var infoOpened = false
     @State private var upgradesOpened = false
-        
+
     var body: some View {
         VStack {
             Text("day \(moneyStore.currentDay)")
                 .foregroundStyle(.secondary)
-            
+
             Spacer()
-            
-            Text("balance")
+
+            Text("balance").font(.headline)
                 .foregroundStyle(.secondary)
             Text(String(format: "%.2f $", moneyStore.amount))
                 .font(.largeTitle)
                 .bold()
-            
+
             Spacer()
-            
+
             clickButton
-            
+
             Spacer()
             Spacer()
-            
+
             bottomButtons
         }
         .sheet(isPresented: $infoOpened) {
@@ -45,7 +44,7 @@ struct ClickerView: View {
         }
         .environmentObject(moneyStore)
     }
-    
+
     private var bottomButtons: some View {
         HStack {
             Button {
@@ -53,9 +52,9 @@ struct ClickerView: View {
             } label: {
                 Label("info", systemImage: "info")
             }
-            
+
             Spacer()
-            
+
             Button {
                 upgradesOpened = true
             } label: {
@@ -64,7 +63,7 @@ struct ClickerView: View {
         }
         .padding(.horizontal)
     }
-    
+
     private var clickButton: some View {
         VStack {
             Button {
@@ -78,11 +77,11 @@ struct ClickerView: View {
         }
         .frame(width: 200, height: 200)
     }
-    
+
     private struct ClickButtonStyle: ButtonStyle {
-        var pressedSize: CGFloat = 130
-        var defaultSize: CGFloat = 100
-        
+        var pressedSize: CGFloat = 260
+        var defaultSize: CGFloat = 180
+
         func makeBody(configuration: Self.Configuration) -> AnyView {
             if configuration.isPressed {
                 return AnyView(

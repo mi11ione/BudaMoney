@@ -5,8 +5,8 @@
 //  Created by Maksim Zoteev on 29.04.2024.
 //
 
-import SwiftUI
 import FeatureConverter
+import SwiftUI
 
 struct ContentView: View {
     var body: some View {
@@ -17,7 +17,10 @@ struct ContentView: View {
                         NavigationLink {
                             CurrencyConverterView()
                         } label: {
-                            Image(systemName: "textformat.123")
+                            Image(systemName: "rublesign.circle")
+                                .resizable()
+                                .frame(width: 40, height: 40)
+                                .foregroundColor(.black)
                         }
                     }
                 }

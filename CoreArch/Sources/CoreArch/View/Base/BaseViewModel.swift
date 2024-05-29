@@ -8,5 +8,5 @@
 import Foundation
 
 @MainActor open class BaseViewModel {
-    public init() { }
+    public init() {}
 }

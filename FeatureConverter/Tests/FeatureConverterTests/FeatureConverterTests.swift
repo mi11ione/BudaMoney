@@ -1,5 +1,5 @@
-import XCTest
 @testable import FeatureConverter
+import XCTest
 
 final class FeatureConverterTests: XCTestCase {
     func testExample() throws {
