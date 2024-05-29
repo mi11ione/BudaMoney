@@ -9,6 +9,7 @@ import FeatureConverter
 import SwiftUI
 
 struct ContentView: View {
+    @Environment(\.colorScheme) private var colorScheme
     var body: some View {
         NavigationStack {
             ClickerView()
@@ -20,7 +21,7 @@ struct ContentView: View {
                             Image(systemName: "rublesign.circle")
                                 .resizable()
                                 .frame(width: 40, height: 40)
-                                .foregroundColor(.black)
+                                .foregroundStyle(colorScheme.colorSelectedBackground)
                         }
                     }
                 }
