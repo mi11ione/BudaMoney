@@ -1,23 +1,22 @@
 //
-//  CurrencyConverterView.swift
+//  CurrencyCalculatorView.swift
 //  FeatureConverter
 //
 //  Created by mi11ion on 4/5/24.
 //
 
-import SwiftUI
 import CoreDI
-import Factory
 import Data
+import Factory
+import SwiftUI
 
 @MainActor public struct CurrencyConverterView: View {
-    
     @State private var viewModel = di.currencyConverterViewModel()
     @FocusState private var keyboardFocused: Bool
-    
+
     @Environment(\.colorScheme) private var colorScheme
-    
-    public init() { }
+
+    public init() {}
 
     public var body: some View {
         List {
@@ -47,7 +46,7 @@ import Data
                     selectedCurrency: $viewModel.endCurrency
                 )
             }
-            
+
             Section(header: Text("Select End Century")) {
                 CurrenciesCarouselView(
                     currencies: centuries,
@@ -79,5 +78,5 @@ import Data
     }
 }
 
-fileprivate let currencies = ["USD", "EUR", "RUB"]
-fileprivate let centuries = ["18", "19", "20", "21"]
+private let currencies = ["USD", "EUR", "RUB"]
+private let centuries = ["18", "19", "20", "21"]
