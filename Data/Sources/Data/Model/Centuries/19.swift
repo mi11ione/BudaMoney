@@ -48,7 +48,7 @@ struct Railway: UserUpgrade {
     var name: String = "Railway"
     var description: String = "Boosts the money received by 10 times"
     var id: String = "railway_19"
-    var price: Double = 10_000
+    var price: Double = 10000
 
     func affectMoney(_ money: Double, _: Int) -> Double {
         money * 10
@@ -59,7 +59,7 @@ struct CoalMine: UserUpgrade {
     var name: String = "Coal mine"
     var description: String = "Boosts the money received by 1-10 times"
     var id: String = "coal_mine_19"
-    var price: Double = 50_000
+    var price: Double = 50000
 
     func affectMoney(_ money: Double, _: Int) -> Double {
         money * Double.random(in: 1 ... 10)

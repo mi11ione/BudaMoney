@@ -59,7 +59,7 @@ struct CarFactory: UserUpgrade {
     var name: String = "Car factory"
     var description: String = "Boosts the money received by 0-10 times"
     var id: String = "car_factory"
-    var price: Double = 10_000
+    var price: Double = 10000
 
     func affectMoney(_ money: Double, _: Int) -> Double {
         money * Double.random(in: 0 ... 10)

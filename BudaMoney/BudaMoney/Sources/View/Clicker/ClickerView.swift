@@ -5,15 +5,17 @@
 //  Created by Maksim Zoteev on 26.05.2024.
 //
 
+import FeatureConverter
 import Foundation
 import SwiftUI
-import FeatureConverter
 
 struct ClickerView: View {
     @StateObject private var moneyStore = MoneyStore()
 
     @State private var infoOpened = false
     @State private var upgradesOpened = false
+
+    @Environment(\.colorScheme) private var colorScheme
 
     var body: some View {
         VStack {
@@ -48,7 +50,7 @@ struct ClickerView: View {
 
     private var bottomButtons: some View {
         ScrollView(.horizontal) {
-            HStack {
+            HStack(spacing: 10) {
                 Button {
                     infoOpened = true
                 } label: {
@@ -60,13 +62,13 @@ struct ClickerView: View {
                 } label: {
                     bottomButton("upgrades", systemImage: "checkmark")
                 }
-                
+
                 NavigationLink {
                     CurrencyConverterView()
                 } label: {
                     bottomButton("converter", systemImage: "rublesign.circle")
                 }
-                
+
                 NavigationLink {
                     SettingsView()
                 } label: {
@@ -91,13 +93,13 @@ struct ClickerView: View {
         }
         .frame(width: 200, height: 200)
     }
-    
+
     private func bottomButton(_ label: String, systemImage: String) -> some View {
         Label(label, systemImage: systemImage)
-            .padding(12)
-            .background(.background)
-            .cornerRadius(25)
-            .shadow(radius: 1)
+            .padding(9)
+            .background(colorScheme == .light ? Color.white : Color(.systemGray6))
+            .cornerRadius(12)
+            .shadow(color: Color.black.opacity(0.1), radius: 5, x: 0, y: 1)
     }
 
     private struct ClickButtonStyle: ButtonStyle {

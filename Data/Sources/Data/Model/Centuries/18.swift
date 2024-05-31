@@ -90,8 +90,8 @@ struct University: UserUpgrade {
     var description: String = "Boosts the money received by 10 times"
     var id: String = "university_id18"
     var price: Double = 5_000_000
-    
-    func affectMoney(_ money: Double, _ day: Int) -> Double {
+
+    func affectMoney(_ money: Double, _: Int) -> Double {
         money * 10
     }
 }

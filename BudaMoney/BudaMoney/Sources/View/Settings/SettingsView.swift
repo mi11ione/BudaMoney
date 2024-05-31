@@ -9,7 +9,6 @@ import Foundation
 import SwiftUI
 
 struct SettingsView: View {
-    
     var body: some View {
         List {
             Section("Application") {
@@ -19,7 +18,7 @@ struct SettingsView: View {
                     Text("Clicker history game")
                 }
             }
-            
+
             Section("Authors") {
                 Link("f0x1d", destination: URL(string: "https://t.me/f0x1d")!)
                 Link("mi11ion", destination: URL(string: "https://t.me/mi11ion")!)
