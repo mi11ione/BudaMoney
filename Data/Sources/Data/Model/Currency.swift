@@ -14,10 +14,10 @@ public struct CurrencyRate {
 }
 
 public let historicalRates: [CurrencyRate] = [
-    CurrencyRate(century: "18", rates: ["GBR": 4.8, "RUB": 4], usdValueIndex: 1),
-    CurrencyRate(century: "19", rates: ["GBR": 5.57, "RUB": 3.45], usdValueIndex: 1.15),
-    CurrencyRate(century: "20", rates: ["GBR": 64.4, "RUB": 690], usdValueIndex: 25.3),
-    CurrencyRate(century: "21", rates: ["GBR": 1.5, "RUB": 90], usdValueIndex: 278.3)
+    CurrencyRate(century: "18", rates: ["GBP": 4.8, "RUB": 4], usdValueIndex: 1),
+    CurrencyRate(century: "19", rates: ["GBP": 5.57, "RUB": 3.45], usdValueIndex: 1.15),
+    CurrencyRate(century: "20", rates: ["GBP": 64.4, "RUB": 690], usdValueIndex: 25.3),
+    CurrencyRate(century: "21", rates: ["GBP": 1.5, "RUB": 90], usdValueIndex: 278.3)
 ]
 
 public protocol Century {
