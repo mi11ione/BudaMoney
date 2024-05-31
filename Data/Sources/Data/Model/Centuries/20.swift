@@ -21,7 +21,7 @@ struct GreatDepression: HistoryEvent {
 
     var century: String = "20"
     var upgrades: [any UserUpgrade] = []
-    var dates: Range<Int> = 0 ..< 200
+    var dates: Range<Int> = 0 ..< 500
 
     func affectMoney(_ money: Double, _: Int) -> Double {
         money / 10
@@ -37,7 +37,7 @@ struct WorldWar2: HistoryEvent {
 
     var century: String = "20"
     var upgrades: [any UserUpgrade] = []
-    var dates: Range<Int> = 500 ..< 700
+    var dates: Range<Int> = 2000 ..< 3000
 
     func affectMoney(_ money: Double, _: Int) -> Double {
         money / 10
@@ -59,7 +59,7 @@ struct CarFactory: UserUpgrade {
     var name: String = "Car factory"
     var description: String = "Boosts the money received by 0-10 times"
     var id: String = "car_factory"
-    var price: Double = 10000
+    var price: Double = 10_000
 
     func affectMoney(_ money: Double, _: Int) -> Double {
         money * Double.random(in: 0 ... 10)
@@ -67,14 +67,14 @@ struct CarFactory: UserUpgrade {
 }
 
 struct ZombieLaboratory: UserUpgrade {
-    var name: String = "zombie Laboratory"
+    var name: String = "Laboratory"
     var description: String = "Gives some money every 10 days"
     var id: String = "zombie_skat57666"
     var price: Double = 100_000
 
     func affectMoney(_ money: Double, _ day: Int) -> Double {
         if day % 10 == 0 {
-            money * Double.random(in: 1 ... 50)
+            money * Double.random(in: 1 ... 100)
         } else {
             money
         }

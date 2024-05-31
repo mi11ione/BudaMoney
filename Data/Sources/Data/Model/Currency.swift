@@ -70,6 +70,7 @@ public let upgrades: [any UserUpgrade] = [
     IndustrialRevolution.Loom(),
     Farm(),
     Shop(),
+    University(),
     ToCentury19(),
 
     Railway(),
