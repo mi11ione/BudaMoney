@@ -43,7 +43,7 @@ final class CurrencyConverterViewModel: BaseViewModel {
                 endAmount = "Invalid start currency"
                 return
             }
-            usdAmount = (amount / fromCurrencyRate) * fromRateData.usdValueIndex
+            usdAmount = (amount / fromCurrencyRate) / fromRateData.usdValueIndex
         }
 
         let targetAmount: Double
@@ -54,7 +54,7 @@ final class CurrencyConverterViewModel: BaseViewModel {
                 endAmount = "Invalid end currency"
                 return
             }
-            targetAmount = (usdAmount / toRateData.usdValueIndex) * toCurrencyRate
+            targetAmount = (usdAmount * toRateData.usdValueIndex) * toCurrencyRate
         }
 
         endAmount = String(format: "%.2f \(endCurrency)", targetAmount)

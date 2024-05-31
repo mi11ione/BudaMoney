@@ -78,5 +78,5 @@ import SwiftUI
     }
 }
 
-private let currencies = ["USD", "EUR", "RUB"]
+private let currencies = ["USD", "GBR", "RUB"]
 private let centuries = ["18", "19", "20", "21"]
