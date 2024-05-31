@@ -9,22 +9,9 @@ import FeatureConverter
 import SwiftUI
 
 struct ContentView: View {
-    @Environment(\.colorScheme) private var colorScheme
     var body: some View {
         NavigationStack {
             ClickerView()
-                .toolbar {
-                    ToolbarItem(placement: .confirmationAction) {
-                        NavigationLink {
-                            CurrencyConverterView()
-                        } label: {
-                            Image(systemName: "rublesign.circle")
-                                .resizable()
-                                .frame(width: 40, height: 40)
-                                .foregroundStyle(colorScheme.colorSelectedBackground)
-                        }
-                    }
-                }
         }
     }
 }

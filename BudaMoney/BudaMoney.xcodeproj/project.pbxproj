@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A716845F2C0A4A3600201FC6 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A716845E2C0A4A3600201FC6 /* SettingsView.swift */; };
 		A75386212BE02F7500C919C7 /* BudaMoneyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */; };
 		A75386232BE02F7500C919C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75386222BE02F7500C919C7 /* ContentView.swift */; };
 		A75386252BE02F7600C919C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A75386242BE02F7600C919C7 /* Assets.xcassets */; };
@@ -47,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		3376AE962BE0474C00B8BF46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A716845E2C0A4A3600201FC6 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		A753861D2BE02F7500C919C7 /* BudaMoney.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BudaMoney.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A75386202BE02F7500C919C7 /* BudaMoneyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BudaMoneyApp.swift; sourceTree = "<group>"; };
 		A75386222BE02F7500C919C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -97,6 +99,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A716845D2C0A4A2800201FC6 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A716845E2C0A4A3600201FC6 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
 		A75386142BE02F7500C919C7 = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +178,7 @@
 		A753864C2BE02F9000C919C7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A716845D2C0A4A2800201FC6 /* Settings */,
 				A7BF5C432C036503008333D5 /* ClickerUpgrades */,
 				A7BF5C3D2C0353AA008333D5 /* ClickerInfo */,
 				A7BF5C372C034BB2008333D5 /* Clicker */,
@@ -367,6 +378,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A716845F2C0A4A3600201FC6 /* SettingsView.swift in Sources */,
 				A7BF5C3F2C0353B7008333D5 /* ClickerInfoView.swift in Sources */,
 				A7BF5C452C03650F008333D5 /* ClickerUpgradesView.swift in Sources */,
 				A7BF5C3C2C034FA1008333D5 /* MoneyStore.swift in Sources */,

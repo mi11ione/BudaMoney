@@ -7,6 +7,7 @@
 
 import Foundation
 import SwiftUI
+import FeatureConverter
 
 struct ClickerView: View {
     @StateObject private var moneyStore = MoneyStore()
@@ -46,22 +47,35 @@ struct ClickerView: View {
     }
 
     private var bottomButtons: some View {
-        HStack {
-            Button {
-                infoOpened = true
-            } label: {
-                Label("info", systemImage: "info")
-            }
+        ScrollView(.horizontal) {
+            HStack {
+                Button {
+                    infoOpened = true
+                } label: {
+                    bottomButton("info", systemImage: "info")
+                }
 
-            Spacer()
-
-            Button {
-                upgradesOpened = true
-            } label: {
-                Label("upgrades", systemImage: "checkmark")
+                Button {
+                    upgradesOpened = true
+                } label: {
+                    bottomButton("upgrades", systemImage: "checkmark")
+                }
+                
+                NavigationLink {
+                    CurrencyConverterView()
+                } label: {
+                    bottomButton("converter", systemImage: "rublesign.circle")
+                }
+                
+                NavigationLink {
+                    SettingsView()
+                } label: {
+                    bottomButton("settings", systemImage: "wand.and.stars")
+                }
             }
+            .padding()
         }
-        .padding(.horizontal)
+        .scrollIndicators(.never)
     }
 
     private var clickButton: some View {
@@ -76,6 +90,14 @@ struct ClickerView: View {
             .buttonStyle(ClickButtonStyle())
         }
         .frame(width: 200, height: 200)
+    }
+    
+    private func bottomButton(_ label: String, systemImage: String) -> some View {
+        Label(label, systemImage: systemImage)
+            .padding(12)
+            .background(.background)
+            .cornerRadius(25)
+            .shadow(radius: 1)
     }
 
     private struct ClickButtonStyle: ButtonStyle {
