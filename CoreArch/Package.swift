@@ -6,17 +6,17 @@ let package = Package(
     name: "CoreArch",
     platforms: [
         .iOS(.v17),
-        .macOS(.v14)
+        .macOS(.v14),
     ],
     products: [
         .library(
             name: "CoreArch",
             targets: ["CoreArch"]
-        )
+        ),
     ],
     targets: [
         .target(
             name: "CoreArch"
-        )
+        ),
     ]
 )
