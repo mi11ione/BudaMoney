@@ -7,9 +7,9 @@
 
 import AlertKit
 import Data
+import Factory
 import Foundation
 import SwiftUI
-import Factory
 
 final class MoneyStore: ObservableObject {
     @AppStorage("money") var amount: Double = 0
@@ -22,7 +22,7 @@ final class MoneyStore: ObservableObject {
     @Published var ongoingEvents: [any HistoryEvent] = []
     @Published var appliedUpgrades: [any UserUpgrade] = []
     @Published var availableUpgrades: [any UserUpgrade] = []
-    
+
     @Injected(\.hapticFeedbackGenerator) private var hapticFeedbackGenerator
 
     init() {
@@ -49,7 +49,7 @@ final class MoneyStore: ObservableObject {
         currentDay += 1
 
         updateState()
-        
+
         hapticFeedbackGenerator.notificationOccurred(.success)
     }
 
